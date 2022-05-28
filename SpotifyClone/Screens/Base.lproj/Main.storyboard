@@ -52,6 +52,7 @@
                                     <color key="baseBackgroundColor" name="primaryColor"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="onTappedLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aOS-ea-vxc"/>
                                     <segue destination="G5z-hk-E0i" kind="presentation" modalPresentationStyle="fullScreen" id="mdS-eN-gfa"/>
                                 </connections>
                             </button>
@@ -75,6 +76,10 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="LtA-7z-Fym" secondAttribute="trailing" constant="20" id="oRY-nl-fuH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="textFieldEmail" destination="LtA-7z-Fym" id="1oT-QO-6RW"/>
+                        <outlet property="textFieldPassword" destination="Feq-t2-7b3" id="ReJ-B1-sXz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -93,7 +98,7 @@
         <image name="bgLogin" width="375" height="382"/>
         <image name="logo" width="163" height="161"/>
         <namedColor name="darkColor">
-            <color red="0.11" green="0.098000000000000004" blue="0.098000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10999999940395355" green="0.097999997437000275" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primaryColor">
             <color red="0.063" green="0.57999999999999996" blue="0.247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
