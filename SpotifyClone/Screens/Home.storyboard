@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Libreria-->
+        <!--Library View Controller-->
         <scene sceneID="6dT-G7-3fx">
             <objects>
                 <viewController id="ErY-xV-uk8" customClass="LibraryViewController" customModule="SpotifyClone" customModuleProvider="target" sceneMemberID="viewController">
@@ -34,21 +34,21 @@
                                 <color key="backgroundColor" name="darkColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" textLabel="mRE-ks-LOE" detailTextLabel="MM6-dc-evZ" style="IBUITableViewCellStyleSubtitle" id="cbT-d3-NtC">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="49"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="cbT-d3-NtC" id="dbT-dH-B0U">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="mRE-ks-LOE">
-                                                    <rect key="frame" x="20" y="7" width="30" height="17"/>
+                                                    <rect key="frame" x="20" y="6.5" width="30" height="17"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Subtitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="MM6-dc-evZ">
-                                                    <rect key="frame" x="20" y="24" width="44" height="14.5"/>
+                                                    <rect key="frame" x="20" y="26" width="44" height="14.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -76,15 +76,26 @@
                             <constraint firstItem="95f-Ot-acE" firstAttribute="top" secondItem="Usp-f7-RIc" secondAttribute="top" id="p4R-z4-XWz"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Libreria" image="books.vertical" catalog="system" id="1NP-W0-txt"/>
+                    <navigationItem key="navigationItem" id="qNW-eI-w52"/>
                     <connections>
                         <outlet property="imageProfile" destination="95f-Ot-acE" id="9GX-CZ-xpd"/>
                         <outlet property="tableView" destination="0Qb-4a-0ld" id="qCH-tR-35a"/>
+                        <segue destination="E4m-M2-NNv" kind="show" identifier="detail" id="iCo-uM-Lfe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Pbc-wP-uzw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="274" y="569"/>
+            <point key="canvasLocation" x="1184.0579710144928" y="568.52678571428567"/>
+        </scene>
+        <!--PlayListDetail-->
+        <scene sceneID="OAI-cz-HpX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PlayListDetail" id="E4m-M2-NNv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="D8B-IG-KTH"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLq-Vj-PTa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1768.1159420289857" y="627.45535714285711"/>
         </scene>
         <!--Buscar-->
         <scene sceneID="fzE-d5-6IA">
@@ -100,7 +111,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KzT-l1-3Gi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1051" y="86"/>
+            <point key="canvasLocation" x="1960.8695652173915" y="85.714285714285708"/>
         </scene>
         <!--Inicio-->
         <scene sceneID="3wh-QZ-kJK">
@@ -131,12 +142,30 @@
                     <connections>
                         <segue destination="nX1-PU-uze" kind="relationship" relationship="viewControllers" id="dbh-Aj-q7W"/>
                         <segue destination="EXV-2t-P5Y" kind="relationship" relationship="viewControllers" id="lvX-dq-dTb"/>
-                        <segue destination="ErY-xV-uk8" kind="relationship" relationship="viewControllers" id="plS-bX-1RD"/>
+                        <segue destination="FB3-NF-h8L" kind="relationship" relationship="viewControllers" id="plS-bX-1RD"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Edv-zT-2r7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-505" y="87"/>
+        </scene>
+        <!--Libreria-->
+        <scene sceneID="5aV-Gt-ybH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="FB3-NF-h8L" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Libreria" image="books.vertical" catalog="system" id="1NP-W0-txt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RfE-ME-Erd">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="ErY-xV-uk8" kind="relationship" relationship="rootViewController" id="u3K-an-mIS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g7A-dc-eRM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273.91304347826087" y="568.52678571428567"/>
         </scene>
     </scenes>
     <resources>
@@ -144,7 +173,7 @@
         <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <namedColor name="darkColor">
-            <color red="0.11" green="0.098000000000000004" blue="0.098000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10999999940395355" green="0.097999997437000275" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

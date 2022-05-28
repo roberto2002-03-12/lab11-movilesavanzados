@@ -17,4 +17,12 @@ class HelperString {
         return url
     }
     
+    static func setFormatNumber(number: Int) -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+            
+        guard let formattedNumber = numberFormatter.string(from: NSNumber(value: number)) else { return "" }
+            
+        return formattedNumber
+    }
 }
