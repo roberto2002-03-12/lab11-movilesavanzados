@@ -33,6 +33,10 @@
 		4B00F2B528426ADE000E5BBF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 4B00F2B428426ADE000E5BBF /* FirebaseDatabase */; };
 		4B00F2B728426ADE000E5BBF /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 4B00F2B628426ADE000E5BBF /* FirebaseFirestore */; };
 		4B00F2B928426ADE000E5BBF /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 4B00F2B828426ADE000E5BBF /* FirebaseStorage */; };
+		4BE1B5AD2852BAD000FF324E /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1B5AC2852BAD000FF324E /* Search.swift */; };
+		4BE1B5B12852BD4E00FF324E /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1B5B02852BD4E00FF324E /* SearchViewModel.swift */; };
+		4BE1B5B32852BE0F00FF324E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1B5B22852BE0F00FF324E /* HomeViewController.swift */; };
+		4BE1B5B52852D80A00FF324E /* ItemSearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BE1B5B42852D80A00FF324E /* ItemSearchTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		4B00F2A52841CFD0000E5BBF /* PlaylistDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaylistDetailViewController.swift; sourceTree = "<group>"; };
 		4B00F2A72841E8F7000E5BBF /* ItemPlaylistDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemPlaylistDetailTableViewCell.swift; sourceTree = "<group>"; };
 		4B00F2AF28426977000E5BBF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4BE1B5AC2852BAD000FF324E /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		4BE1B5B02852BD4E00FF324E /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		4BE1B5B22852BE0F00FF324E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4BE1B5B42852D80A00FF324E /* ItemSearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemSearchTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +154,7 @@
 				4B00F26F2835E8E9000E5BBF /* Request.swift */,
 				4B00F2752835E9D2000E5BBF /* PlatListViewModel.swift */,
 				4B00F29F28417ADE000E5BBF /* PlatlistDetailViewModel.swift */,
+				4BE1B5B02852BD4E00FF324E /* SearchViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 				4B00F2542835CF07000E5BBF /* ViewController.swift */,
 				4B00F2772835EAA9000E5BBF /* LibraryViewController.swift */,
 				4B00F2A52841CFD0000E5BBF /* PlaylistDetailViewController.swift */,
+				4BE1B5B22852BE0F00FF324E /* HomeViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -165,6 +175,7 @@
 			children = (
 				4B00F26D2835E895000E5BBF /* PlayList.swift */,
 				4B00F29928416C69000E5BBF /* PlayListDetail.swift */,
+				4BE1B5AC2852BAD000FF324E /* Search.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				4B00F2A72841E8F7000E5BBF /* ItemPlaylistDetailTableViewCell.swift */,
+				4BE1B5B42852D80A00FF324E /* ItemSearchTableViewCell.swift */,
 			);
 			path = ViewCell;
 			sourceTree = "<group>";
@@ -264,11 +276,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BE1B5B52852D80A00FF324E /* ItemSearchTableViewCell.swift in Sources */,
 				4B00F2742835E94D000E5BBF /* Spotify+Image.swift in Sources */,
 				4B00F2552835CF07000E5BBF /* ViewController.swift in Sources */,
 				4B00F29C28416E02000E5BBF /* GradientView.swift in Sources */,
 				4B00F2722835E920000E5BBF /* Spotify+String.swift in Sources */,
 				4B00F2762835E9D2000E5BBF /* PlatListViewModel.swift in Sources */,
+				4BE1B5B32852BE0F00FF324E /* HomeViewController.swift in Sources */,
 				4B00F2A82841E8F8000E5BBF /* ItemPlaylistDetailTableViewCell.swift in Sources */,
 				4B00F2512835CF07000E5BBF /* AppDelegate.swift in Sources */,
 				4B00F2702835E8E9000E5BBF /* Request.swift in Sources */,
@@ -276,6 +290,8 @@
 				4B00F2A62841CFD0000E5BBF /* PlaylistDetailViewController.swift in Sources */,
 				4B00F2A028417ADE000E5BBF /* PlatlistDetailViewModel.swift in Sources */,
 				4B00F2782835EAA9000E5BBF /* LibraryViewController.swift in Sources */,
+				4BE1B5AD2852BAD000FF324E /* Search.swift in Sources */,
+				4BE1B5B12852BD4E00FF324E /* SearchViewModel.swift in Sources */,
 				4B00F29A28416C69000E5BBF /* PlayListDetail.swift in Sources */,
 				4B00F26E2835E895000E5BBF /* PlayList.swift in Sources */,
 			);
